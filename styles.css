@@ -1,14 +1,14 @@
 body {
-  background-color: #FAF0E6;
+  background-color: #FFFFFF;
   font-family: arial;
 }
  
 .bg-dark{
-  background-color: #FAF0E6 !important; 
+  background-color: #FFFFFF !important; 
 }
 
 .navbar-brand{
-    background-color: #FAF0E6; 
+    background-color: #FFFFFF; 
     font-family: anton;
     font-size:30px;
 }
