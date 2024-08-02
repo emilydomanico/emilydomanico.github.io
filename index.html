@@ -1,18 +1,262 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Emily Domanico Portfolio</title>
+  <meta name= "description" content="Data science, data visualization, and cartography portfolio">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel= "stylesheet" href="styles.css"> 
+  <style>
+  .fakeimg {
+    height: 100px;
+    width: 70px;
+    background: #F87060;
+  }
+  </style>
 </head>
+<body id= "page-top">
 
-<body>
+<nav class="navbar sticky-top py-md-3 navbar-expand-sm bg-dark navbar-light">
+  <a class="navbar-brand" href="#page-top">Emily Domanico</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#page-top">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#writing">Presentations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="DomanicoResume.pdf" target="_blank">Resume</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<!-- Portfolio -->
+<section id="portfolio" style="margin-top: 30px; margin-left: 10%; margin-right: 10%;">
+  <div class = "row">
+    <div class="col-md-6" id = 'first-project'>
+      <h5>
+        Fare Equity Analysis
+      </h5>
+      <p>
+        January 2024 <a href= 'https://cdn.mbta.com/sites/default/files/2024-01/2024-02-Service-and-Fare-Change-Equity-Policy-Draft.pdf' target="_blank"><i class="bi bi-box-arrow-up-right"></i></a> &
+        March 2022 <a href= 'https://cdn.mbta.com/sites/default/files/2022-03/2022-03-17-SFY23-fare-equity-analysis-mem-ctps.pdf' target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+      </p>
+      <p>
+        Projected equity implications for fare changes using survey, ridership, and revenue data for the MBTA. Managed transfer from a spreadsheet-based process to version-controlled, coded process to accommodate more complex fare changes and rolling data input updates. 
+      <p>
+        Role: Project Manager, Data Analyst
+      </p>
+      <p>
+        R (tidyverse), Postgres, GitHub
+      </p>
+    </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+    <div class="col-md-6" id = 'first-project'>
+      <h5>
+        BRMPO Demographics
+      </h5>
+      <p>
+        March 2024
+      </p>
+      <p>
+        Compiled and consolidated efforts to maintain demographic data on equity populations that the Boston Region MPO tracks throughout work.
+      </p>
+      <p>
+        Role: Project Manager, Data Analyst
+      </p>
+      <p>
+        R (tidycensus, tidyverse), GitHub
+      </p>
+    </div>
+  </div>
+  <br>
+  <div class = "row">
+    <div class="col-md-4" id = 'first-project'>
+      <h5>
+        Title VI Triennial Report <a href= 'https://cdn.mbta.com/sites/default/files/2023-11/2023-11-14-mbta-title-VI-program.pdf' target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+      </h5>
+      <p>
+        June 2023
+      </p>
+      <p>
+        Reported on the Demographic and Service Profile of the MBTA (Chapter 3), generated analysis and maps. Also generated analysis of Limited English Proficiency (LEP) populations in for the Langauge Access Plan (Appendix 3). 
+      </p>
+      <p>
+        Role: Data Analyst
+      </p>
+      <p>
+        R (tidyverse, tidycensus), QGIS
+      </p>
+    </div>
+
+    <div class="col-md-8">
+      <div class= "row">
+        <div class= "col-sm-6">
+          <a href = 'https://cdn.mbta.com/sites/default/files/2023-11/2023-11-14-mbta-title-VI-program.pdf' target="_blank">
+           <img 
+          class="img-fluid portfolio-item" 
+          src= "img/titlevi-01.png" 
+          alt= "Screenshot of map showing Commuter Rail facility locations and equity population concenratations.">
+        </a>
+        </div>
+       <div class = "col-sm-6">
+        <a href='https://cdn.mbta.com/sites/default/files/2023-11/2023-11-14-mbta-title-VI-program.pdf' target="_blank">
+        <img 
+          class="img-fluid portfolio-item" 
+          src= "img/titlevi-02.png" 
+          alt= "Screenshot of map showing the concentration of Spanish speakers with limited English proficiency in the MBTA service area.">
+        </a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class = "row">
+    <div class="col-md-4" id = 'first-project'>
+      <h5>
+        Existing Inequities <a href= 'https://github.com/CTPSSTAFF/existing-inequities' target="_blank"><i class="bi bi-github"></i></a>
+      </h5>
+      <p>
+        August 2022
+      </p>
+      <p>
+        Designed destination access equity metrics and developed interactive web apps to assist in regional transportation planning using dasymetric population mapping.
+      </p>
+      <p>
+        Role: Data Analyst, Application Development
+      </p>
+      <p>
+        R (tidyverse, sf, stars, leaflet, shiny), python (tobler, geopandas, numpy, osmnx), Conveyal
+      </p>
+    </div>
+
+    <div class="col-md-8">
+      <div class= "row">
+        <div class= "col-sm-6">
+          <a href = 'http://shinyapps.ctps.org/ExistingInequities/' target="_blank">
+           <img 
+          class="img-fluid portfolio-item" 
+          src= "img/existing-inequities-01.png" 
+          alt= "Screenshot of interactive application about inequitable access to destinations in the Boston Region">
+        </a>
+        </div>
+       <div class = "col-sm-6">
+        <a href = 'http://shinyapps.ctps.org/ExistingInequities/' target="_blank">
+        <img 
+          class="img-fluid portfolio-item" 
+          src= "img/existing-inequities-02.png" 
+          alt= "Screenshot of interactive map showing percieved difference in cost to access Lynn from surrounding municipalities in the Boston region">
+        </a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<hr>
+ <!-- Presentations and Writing -->
+<section id="writing" style= "margin-top: 30px; margin-left: 10%; margin-right: 10%;">
+  <div class= "row">
+    <div class= "col-sm-12">
+      <h3>Presentations & Writing</h3>
+    </div>
+    <div class= "col-md-4 mb-3">
+      <p>
+        <a href = 'https://www.youtube.com/watch?v=W_yodu3byZo&ab_channel=NACIS' target="_blank"><b>Mapping Durable Transit Ridership in the Boston Region </b></a>
+      </p>
+      <p>
+      North American Cartographic Information Society, Annual Meeting. Minniapolis, MN. October 2022.
+    </p>
+    </div>
+    <div class= "col-md-4 mb-3">
+      <p>
+        <a href = 'https://ica-abs.copernicus.org/articles/1/65/2019/' target="_blank"> <b>Map Use in Transit Control Centers: Mapping geographic information flows</b>
+        </a>
+      </p>
+      <p>
+        International Cartography Conference. Tokyo, Japan. July 2019.
+      </p>
+    </div>
+     <div class= "col-md-4 mb-3">
+      <p>
+        <a href = 'https://www.youtube.com/watch?v=1TtW2pOch4E&t=25s&ab_channel=NACIS' target="_blank"><b>Monitoring Urban Transit Networks: Map use in transit control centers</b>
+        </a>
+      </p>
+      <p>
+        North American Cartographic Information Society, Annual Meeting. Norfolk, VA. October 2018.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr>
+ <!-- About -->
+<section id= "about" style= "margin-top: 30px; margin-left: 10%; margin-right: 10%;">
+  <div class= "row">
+    <div class= "col-sm-12" >
+      <h3>About</h3>
+    </div>
+    <div class= "col-md-3">
+      <div class= "portrait">
+        <img src= "img/Emily.png" alt= "Portrait of Emily Domanico">
+      </div>
+    </div>
+    <div class= "col-sm-1">
+    </div>
+    <div class= "col-md-7">
+      <p>
+        Click <a href= "DomanicoResume.pdf" target="_blank"><b> HERE </a></b>for a printable CV.
+      </p>
+      <p>
+        I am a collaborative and process-oriented data scientist interested in developing and designing workflows to support effective use of data and geographic information. I have a background in spatial data science, information visualization, cartography, usability studies, and transportation data analysis.
+      </p>
+      <p>
+        erdomanico@gmail.com
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="margin-bottom:0">
+  <hr>
+  <div class="container">
+      <div class="col-md-4">
+        <span class="copyright">Last updated Aug 2024</span>
+      </div>
+    <div class="col-md-4">
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/erdomanico/"> 
+            LINKEDIN
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/emilydomanico">
+            GITHUB
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>
+</footer>
 
 </body>
 </html>
