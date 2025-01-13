@@ -53,3 +53,15 @@ footer {
 .jumbotron{
   background-color: #FFF0F6;
 }
+
+
+@media screen and (min-width: 770px) {
+            .custom-border-left {
+                border-left: 1px solid #e8e8e8;
+            }
+        }
+@media screen and (max-width: 770px) {
+            .custom-border-bottom{
+                border-bottom: 1px solid #e8e8e8;
+            }
+        }
