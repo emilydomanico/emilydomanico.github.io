@@ -2,6 +2,11 @@ body {
   background-color: #FFFFFF;
   font-family: arial;
 }
+
+.navbar {
+    /* What the docs use */
+    --bs-navbar-padding-x: 0.5rem;
+}
  
 .bg-dark{
   background-color: #FFFFFF !important; 
